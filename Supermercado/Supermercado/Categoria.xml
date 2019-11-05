@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<categoria>
+<row>
+  <CodCat>1</CodCat>
+  <NomCat>Lacteos</NomCat>
+</row>
+<row>
+  <CodCat>2</CodCat>
+  <NomCat>Granos</NomCat>
+</row>
+<row>
+  <CodCat>3</CodCat>
+  <NomCat>Carnes</NomCat>
+</row>
+<row>
+  <CodCat>4</CodCat>
+  <NomCat>Bebidas</NomCat>
+</row>
+<row>
+  <CodCat>5</CodCat>
+  <NomCat>Aseo</NomCat>
+</row>
+</categoria>
