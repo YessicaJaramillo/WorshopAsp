@@ -13,21 +13,33 @@
     <form id="form1" runat="server">
         <div class="container">
             <div class="row">
-                <div class="col mt-5">
-                <h1>Carga de datos directas de la base de datos </h1>
-            <div>
+                <div class="col mt-5  text-center">
+                <h1>Carga de datos directas de la base de datos y generar los archivos JSON </h1>
+            <div class="m-auto">
             <asp:DropDownList ID="ddlDatos" runat="server"></asp:DropDownList>
             </div>
               
             <div class="my-2">
-            <asp:GridView ID="gvDatos" runat="server"></asp:GridView>
+            <asp:GridView ID="gvDatos" runat="server" CssClass="m-auto" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal">
+                <AlternatingRowStyle BackColor="#F7F7F7" />
+                <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
+                <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
+                <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
+                <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
+                <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
+                <SortedAscendingCellStyle BackColor="#F4F4FD" />
+                <SortedAscendingHeaderStyle BackColor="#5A4C9D" />
+                <SortedDescendingCellStyle BackColor="#D8D8F0" />
+                <SortedDescendingHeaderStyle BackColor="#3E3277" />
+                </asp:GridView>
             </div>
+            
             <asp:LinkButton ID="lbIndex" runat="server" PostBackUrl="~/Index.aspx">Regresar al index</asp:LinkButton>
-            <div>
+            <div  class="m-auto">
             <asp:Button ID="btnCargar" runat="server" Text="Cargar informacion" OnClick="btnCargar_Click" CssClass="btn btn-warning" />
             <asp:Button ID="btnGenerar" runat="server" Text="Generar JSON" OnClick="btnGenerar_Click" CssClass="btn btn-info" />
             </div>
-                </div>
+            </div>
             </div>
         </div>
     </form>

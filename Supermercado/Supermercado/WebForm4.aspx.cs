@@ -14,11 +14,24 @@ namespace Supermercado
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           /* string categoria = File.ReadAllText(Server.MapPath("Categoria.json"));
+            
+
+
+        }
+
+        protected void btnCargar_Click(object sender, EventArgs e)
+        {
+            string categoria = File.ReadAllText(Server.MapPath("Categoria.json"));
             DataTable table = (DataTable)JsonConvert.DeserializeObject(categoria, typeof(DataTable));
             ddlCategoria.DataSource = table;
             ddlCategoria.DataTextField = "NomCat";
-            ddlCategoria.DataBind(); */
+            ddlCategoria.DataBind();
+
+
+            string producto = File.ReadAllText(Server.MapPath("Producto.json"));
+            DataTable tabla = (DataTable)JsonConvert.DeserializeObject(producto, typeof(DataTable));
+            gvProducto.DataSource = tabla;
+            gvProducto.DataBind();
 
         }
     }

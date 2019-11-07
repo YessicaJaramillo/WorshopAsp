@@ -1,1 +1,11 @@
-[{"row":[{"CodCat":"1","NomCat":"Lacteos"},{"CodCat":"2","NomCat":"Granos"},{"CodCat":"3","NomCat":"Carnes"},{"CodCat":"4","NomCat":"Bebidas"},{"CodCat":"5","NomCat":"Aseo"}]}]
+﻿[{"CodProd":1,"NomProd":"Leche","CodCat":1},
+{"CodProd":2,"NomProd":"Arroz","CodCat":2},
+{"CodProd":3,"NomProd":"Queso","CodCat":1},
+{"CodProd":4,"NomProd":"Pollo","CodCat":3},
+{"CodProd":5,"NomProd":"Gaseosa","CodCat":4},
+{"CodProd":6,"NomProd":"Jabón","CodCat":5},
+{"CodProd":7,"NomProd":"Frijol","CodCat":2},
+{"CodProd":8,"NomProd":"Crema dental","CodCat":5},
+{"CodProd":9,"NomProd":"Jamón","CodCat":3},
+{"CodProd":10,"NomProd":"Tequila","CodCat":4},
+{"CodProd":11,"NomProd":"Kumis","CodCat":1}]

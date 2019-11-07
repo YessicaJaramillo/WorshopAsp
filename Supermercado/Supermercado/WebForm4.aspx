@@ -13,19 +13,32 @@
     <form id="form1" runat="server">
         <div class="container">
             <div class="row">
-                <div class="col mt-5">
+                <div class="col mt-5 text-center">
             <h1>Archivos JSON</h1>
-            <div>
+            <div class="m-auto">
             <asp:DropDownList ID="ddlCategoria" runat="server"></asp:DropDownList>
             </div>
             <div class="my-2">
-            <asp:GridView ID="gvProducto" runat="server"></asp:GridView>
+            <asp:GridView ID="gvProducto" runat="server" CssClass="m-auto" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+                <AlternatingRowStyle BackColor="#DCDCDC" />
+                <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+                <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                <SortedAscendingHeaderStyle BackColor="#0000A9" />
+                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                <SortedDescendingHeaderStyle BackColor="#000065" />
+                </asp:GridView>
             </div>
+            
             <asp:LinkButton ID="lbIndex" runat="server" PostBackUrl="~/Index.aspx">Regresar al index</asp:LinkButton>
-            <div>
-            <asp:Button ID="btnCargar" runat="server" Text="Archivo JSON" CssClass="btn btn-info" />
+            
+             <div class="m-auto">
+            <asp:Button ID="btnCargar" runat="server" Text="Archivo JSON" CssClass="btn btn-info" OnClick="btnCargar_Click" />
             </div>
-               </div>
+            </div>
             </div>
         </div>
     </form>

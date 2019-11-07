@@ -12,28 +12,28 @@
     <form id="form1" runat="server">
         <div class="container bg-light">
             <div class="row">
-                <div class="col  text-center mt-5">
+                <div class="col mt-5 text-center ">
                    
                     <h1>Menú principal</h1>
                        
-                        <asp:Label ID="lblForm1" runat="server" Text="Ir a la carga de información por medio de xml formulario1"></asp:Label>
+                        <asp:Label ID="lblForm1" runat="server" Text="Ir a la carga de datos por medio de xml formulario1"></asp:Label>
                         <div class="my-2">               
-                        <asp:Button ID="btnForm1" runat="server" Text="Ir a la infomación" CssClass="btn btn-info" OnClick="btnForm1_Click" />
+                        <asp:Button ID="btnForm1" runat="server" Text="Ir al formulario" CssClass="btn btn-info" OnClick="btnForm1_Click" />
                         </div>
                           
-                        <asp:Label ID="lblForm2" runat="server" Text="Ir a la carga de información por medio de base de datos formulario2"></asp:Label>
+                        <asp:Label ID="lblForm2" runat="server" Text="Ir a la carga de datos por medio de base de datos formulario2"></asp:Label>
                        <div class="my-2">
-                        <asp:Button ID="btnForm2" runat="server" Text="Ir a la información " CssClass="btn btn-success" OnClick="btnForm2_Click" />
+                        <asp:Button ID="btnForm2" runat="server" Text="Ir al formulario" CssClass="btn btn-success" OnClick="btnForm2_Click" />
                        </div>
                     
                         <asp:Label ID="lblForm3" runat="server" Text="Ir a la carga de información formulario3"></asp:Label>
                         <div class="my-2">
-                        <asp:Button ID="btnForm3" runat="server" Text="Ir a la información" CssClass="btn btn-warning" OnClick="btnForm3_Click" />
+                        <asp:Button ID="btnForm3" runat="server" Text="Ir al formulario" CssClass="btn btn-warning" OnClick="btnForm3_Click" />
                         </div> 
                         
                         <asp:Label ID="lblForm4" runat="server" Text="Ir a la carga de archivo JSON"></asp:Label>
                         <div class="my-2">
-                        <asp:Button ID="btnForm4" runat="server" Text="Ir a la información" CssClass="btn btn-danger" OnClick="btnForm4_Click" />
+                        <asp:Button ID="btnForm4" runat="server" Text="Ir al formulario" CssClass="btn btn-danger" OnClick="btnForm4_Click" />
                         </div> 
                     
                 </div>   

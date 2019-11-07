@@ -29,6 +29,9 @@ namespace Supermercado
             ddlDatos.DataSource = set;
             ddlDatos.DataTextField = "NomCat";
             ddlDatos.DataBind();
+            
+            Session["Archivo"] = JsonConvert.SerializeObject(set);
+            
 
         }
 
@@ -42,6 +45,8 @@ namespace Supermercado
             adapter.Fill(data);
             gvDatos.DataSource = data;
             gvDatos.DataBind();
+         
+            Session["Archivo2"] = JsonConvert.SerializeObject(data);
         }
 
         protected void btnCargar_Click(object sender, EventArgs e)
@@ -52,19 +57,11 @@ namespace Supermercado
 
         protected void btnGenerar_Click(object sender, EventArgs e)
         {
-            DataSet set = new DataSet();
-            set.ReadXml(Server.MapPath("Categoria.xml"));
-            ddlDatos.DataSource = set;
-            ddlDatos.DataTextField = "NomCat";
-            ddlDatos.DataBind();
-            dynamic categoria = ddlDatos.DataSource;
-            dynamic producto = gvDatos.DataSource;
-
-            Session["Archivo"] = JsonConvert.SerializeObject(categoria);
-
             File.WriteAllText(Server.MapPath("Categoria.json"), "[" + Session["Archivo"].ToString() + "]");
-            File.WriteAllText(Server.MapPath("Producto.json"), "[" + Session["Archivo"].ToString() + "]");
+            File.WriteAllText(Server.MapPath("Producto.json"), "[" + Session["Archivo2"].ToString() + "]");
             Response.Write("<script>alert('Archivos JSON creado')</script>");
         }
+
+        
     }
 }
